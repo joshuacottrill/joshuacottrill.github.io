@@ -1,159 +1,33 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <style>
-      
-      .footer-container {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f9fa; 
-        padding: 10px 0; 
-        }
-        .footer-container img {
-          margin-right: 10px; 
-        }
-        .footer-container .row {
-          margin-right: -5px;
-          margin-left: -5px;
-        }
-
-        .footer-container [class*="col-"] {
-            padding-right: 5px;
-            padding-left: 5px;
-        }
-        .ml14 {
-          font-weight: 200;
-          font-size: 3.2em;
-        }
-
-        .ml14 .text-wrapper {
-          position: relative;
-          display: inline-block;
-          padding-top: 0.1em;
-          padding-right: 0.05em;
-          padding-bottom: 0.15em;
-        }
-
-        .ml14 .line {
-          opacity: 0;
-          position: absolute;
-          left: 0;
-          height: 2px;
-          width: 100%;
-          background-color: #fff;
-          transform-origin: 100% 100%;
-          bottom: 0;
-        }
-
-        .ml14 .letter {
-          display: inline-block;
-          line-height: 1em;
-        }
-    </style>
-
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Joshua Cottrill</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Cottrill - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="employment.html">Employment</a></li>
+      </ul>
     </nav>
-
-    <div class="container text-center mt-5">
-      <div class="row mb-4">
-          <div class="col-md-12">
-              <h1 class="ml14">
-                  <span class="text-wrapper">
-                      <span class="letters">Welcome To My Personal Site!</span>
-                      <span class="line"></span>
-                  </span>
-              </h1>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-6 mx-auto">
-              <img src="/Site Contents/personal-image.jpg" alt="Personal Image" class="img-fluid" style="max-width: 100%;">
-          </div>
-          <div class="col-md-6 mx-auto">
-              <div class="mx-auto" style="max-width: 600px; margin-left: 20px; margin-right: 20px;">
-                  <p>
-                      Welcome! My name is Joshua Cottrill, and I am a current senior at the
-                      University of Oklahoma studying Management Information Systems. This site
-                      showcases my experiences in and out of the classroom, please click on a tab to
-                      learn more!
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
+  </header>
   
+  <section class="home-section">
+    <h1>Josh Cottrill</h1>
+    <h2>Student at The University of Oklahoma</h2>
+    <p>Welcome to my personal website! Here you will find information about my work, skills, and projects.</p>
+  </section>
   
-    <div class="footer-container text-center mt-5" style="margin-bottom: 0;">
-        <div class="row">
-            <div class="col-md-4 mb-2">
-                <a href="https://www.linkedin.com/in/joshuacottrill6/" target="_blank">
-                    <img src="/Site Contents/linkedin-logo-new.png" alt="LinkedIn Logo" class="img-fluid" width="25" height="25">
-                </a>
-            </div>
-            <div class="col-md-4 mb-2" style="margin-bottom: 0;">
-                <a href="https://github.com/joshuacottrill" target="_blank">
-                    <img src="/Site Contents/github-logo.png" alt="Github Logo" class="img-fluid" width="25" height="25">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-      var textWrapper = document.querySelector('.ml14 .letters');
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-      anime.timeline({loop: true})
-        .add({
-          targets: '.ml14 .line',
-          scaleX: [0,1],
-          opacity: [0.5,1],
-          easing: "easeInOutExpo",
-          duration: 900
-        }).add({
-          targets: '.ml14 .letter',
-          opacity: [0,1],
-          translateX: [40,0],
-          translateZ: 0,
-          scaleX: [0.3, 1],
-          easing: "easeOutExpo",
-          duration: 800,
-          offset: '-=600',
-          delay: (el, i) => 150 + 25 * i
-        }).add({
-          targets: '.ml14',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <footer>
+    <p>&copy; 2024 Joshua Cottrill | <a href="https://github.com/joshuacottrill">GitHub</a></p>
+  </footer>
+</body>
 </html>
+
