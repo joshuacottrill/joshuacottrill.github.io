@@ -87,6 +87,15 @@
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px; /* Adds rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .projects-section ul li:hover {
+    background-color: #e0e0e0; /* Slightly darker background */
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
   }
   
   footer {
@@ -110,12 +119,5 @@
   
   footer a:hover {
     color: #000;
-  }
-  
-  /* Hover Effects */
-  .projects-section ul li:hover {
-    background-color: #f0f0f0;
-    padding: 10px;
-    transition: background-color 0.3s ease;
   }
   
