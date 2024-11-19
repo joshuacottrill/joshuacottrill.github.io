@@ -1,138 +1,121 @@
-/* General reset */
-body, html {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    font-family: "Garamond", "Times New Roman", serif; /* Elegance through typography */
-    color: #2c2c2c;
-    background-color: #f9f9f9; /* Subtle off-white */
-}
-
-/* Navigation bar */
-.navbar {
-    background-color: #fefefe; /* Clean white */
-    border-bottom: 1px solid #e6e6e6;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
     padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 30px; /* Wider spacing for luxury feel */
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-size: 16px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    padding: 5px;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-    font-weight: 500;
-}
-
-.navbar ul li a:hover {
-    color: #000000;
-    border-bottom: 2px solid #555555;
-}
-
-/* Section styling */
-.home-section {
-    text-align: center;
-    padding: 120px 20px;
+  }
+  
+  header {
     background-color: #ffffff;
-    color: #333333;
-}
-
-.home-section h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #111111;
-    letter-spacing: 2px;
-    font-family: "Bodoni MT", "Didot", serif;
-}
-
-.home-section h2 {
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-style: italic;
-    color: #444444;
-    font-weight: 400;
-}
-
-.home-section p {
-    font-size: 18px;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
-    color: #555555;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    background-color: #fefefe;
-    color: #777777;
     padding: 20px 0;
-    font-size: 14px;
-    border-top: 1px solid #e6e6e6;
-}
-
-footer a {
-    color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    color: #333;
     text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-footer a:hover {
-    color: #000000;
-    text-decoration: underline;
-}
-
-/* Buttons (if needed) */
-button {
-    background-color: #111111;
-    color: #ffffff;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #333333;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .home-section {
-        padding: 80px 10px;
-    }
-}
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  
+  .projects-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .projects-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .projects-section p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .projects-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .projects-section ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #000;
+  }
+  
+  /* Hover Effects */
+  .projects-section ul li:hover {
+    background-color: #f0f0f0;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
