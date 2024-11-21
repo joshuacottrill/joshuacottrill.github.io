@@ -11,12 +11,14 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
     background-color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 nav {
@@ -33,6 +35,11 @@ nav {
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #000;
 }
 
 nav ul {
@@ -55,13 +62,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #000;
-    text-decoration: underline; /* Underline effect on hover */
+    text-decoration: underline;
 }
 
 .projects-section {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
+    transition: margin 0.3s ease, padding 0.3s ease;
 }
 
 .projects-section h1 {
@@ -70,6 +78,7 @@ nav ul li a:hover {
     color: #000;
     margin-bottom: 20px;
     text-align: center;
+    transition: color 0.3s ease;
 }
 
 .projects-section p {
@@ -77,6 +86,7 @@ nav ul li a:hover {
     color: #555;
     text-align: center;
     margin-bottom: 40px;
+    transition: color 0.3s ease, margin 0.3s ease;
 }
 
 .projects-section ul {
@@ -89,14 +99,14 @@ nav ul li a:hover {
     line-height: 1.8;
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 5px; /* Adds rounded corners */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-section ul li:hover {
-    background-color: #e0e0e0; /* Slightly darker background */
-    transform: scale(1.03); /* Slight zoom effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -105,19 +115,23 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
     border-top: 1px solid #ddd;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 footer p {
     font-size: 1rem;
     color: #888;
+    transition: color 0.3s ease;
 }
 
 footer a {
     text-decoration: none;
     color: #333;
     margin: 0 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 footer a:hover {
     color: #000;
+    text-decoration: underline;
 }
